@@ -9,7 +9,7 @@ def estimator(data):
 def daysConverter(number, durationType):
   if data["periodType"] == 'days':
     days = data["timeToElapse"]
-    elif data["periodType"] == 'weeks':
+  elif data["periodType"] == 'weeks':
       days = ((data["timeToElapse"]) * 7)
       else:
         days = ((data["timeToElapse"]) * 30)
@@ -65,6 +65,6 @@ def impactAssess(reportedCases, numberOfDays, hospitalBeds):
     data["data"] = dataAndela
     data["impact"] = impact
     data["severeImpact"] = severeImpact
-    
+
     return data
 
