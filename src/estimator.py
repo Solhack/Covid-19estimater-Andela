@@ -108,4 +108,4 @@ def impactAssess(reportedCases, numberOfDays, hospitalBeds,percentage,income):
     severeDollarsInFlight = int((impactTimeSevere * income * percentage) / numberOfDays)
 
     return impact, severeImpact, impactTime, impactTimeSevere, severeCasesByRequestedTime, severeSevereCasesByRequestedTime, hospitalBedsLeft, severeHospitalBedsLeft, icuCases, severeIcuCases, ventilatorCases, severeVentilatorCases, dollarsInFlight, severeDollarsInFlight
-    return (data)
+    
