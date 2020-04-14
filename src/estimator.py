@@ -65,5 +65,6 @@ def impactAssess(reportedCases, numberOfDays, hospitalBeds):
     data["data"] = dataAndela
     data["impact"] = impact
     data["severeImpact"] = severeImpact
+    
     return data
 
