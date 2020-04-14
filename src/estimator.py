@@ -39,32 +39,33 @@ def impactAssess(reportedCases, numberOfDays, hospitalBeds):
   numberOfDays = daysConverter(numberOfDays, durationType)
   currentlyInfected, severeCurrentlyInfected, requestedTime, requestedTimeSevere, severeCasesByRequestedTime, severeSevereCasesByRequestedTime, hospitalBedsLeft, severeHospitalBedsLeft, icuCases, severeIcuCases, ventilatorCases, severeVentilatorCases, dollarsInFlight, severeDollarsInFlight = impactAssess(reportedCases, numberOfDays, hospitalBeds)
 
-    data = {}
-    dataAndela = data
+  data = {}
 
-    impact = {
-        "currentlyInfected": currentlyInfected,
-        "infectionsByRequestedTime": requestedTime,
-        "severeCasesByRequestedTime": severeCasesByRequestedTime,
-        "hospitalBedsByRequestedTime": hospitalBedsLeft,
-        "casesForICUByRequestedTime": icuCases,
-        "casesForVentilatorsByRequestedTime": ventilatorCases, 
-        "dollarsInFlight": dollarsInFlight
+  dataAndela = data
+
+  impact = {
+      "currentlyInfected": currentlyInfected,
+      "infectionsByRequestedTime": requestedTime,
+      "severeCasesByRequestedTime": severeCasesByRequestedTime,
+      "hospitalBedsByRequestedTime": hospitalBedsLeft,
+      "casesForICUByRequestedTime": icuCases,
+      "casesForVentilatorsByRequestedTime": ventilatorCases, 
+      "dollarsInFlight": dollarsInFlight
     }
 
-    severeImpact = {
-        "currentlyInfected": severeCurrentlyInfected,
-        "infectionsByRequestedTime": requestedTimeSevere,
-        "severeCasesByRequestedTime": severeSevereCasesByRequestedTime,
-        "hospitalBedsByRequestedTime": severeHospitalBedsLeft,
-        "casesForICUByRequestedTime": severeIcuCases,
-        "casesForVentilatorsByRequestedTime": severeVentilatorCases,
-        "dollarsInFlight": severeDollarsInFlight
+  severeImpact = {
+      "currentlyInfected": severeCurrentlyInfected,
+      "infectionsByRequestedTime": requestedTimeSevere,
+      "severeCasesByRequestedTime": severeSevereCasesByRequestedTime,
+      "hospitalBedsByRequestedTime": severeHospitalBedsLeft,
+      "casesForICUByRequestedTime": severeIcuCases,
+      "casesForVentilatorsByRequestedTime": severeVentilatorCases,
+      "dollarsInFlight": severeDollarsInFlight
     }
 
-    data["data"] = dataAndela
-    data["impact"] = impact
-    data["severeImpact"] = severeImpact
+  data["data"] = dataAndela
+  data["impact"] = impact
+  data["severeImpact"] = severeImpact
 
-    return data
+  return data
 
