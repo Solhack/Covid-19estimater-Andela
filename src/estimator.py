@@ -10,10 +10,10 @@ def daysConverter(number, durationType):
   if data["periodType"] == 'days':
     days = data["timeToElapse"]
   elif data["periodType"] == 'weeks':
-      days = ((data["timeToElapse"]) * 7)
-      else:
-        days = ((data["timeToElapse"]) * 30)
-        return days
+    days = ((data["timeToElapse"]) * 7)
+  else:
+    days = ((data["timeToElapse"]) * 30)
+  return days
 
 def impactAssess(reportedCases, numberOfDays, hospitalBeds):
   hospitalBeds = hospitalBeds * .35
@@ -36,8 +36,8 @@ def impactAssess(reportedCases, numberOfDays, hospitalBeds):
 
   return impact, severeImpact, impactTime, impactTimeSevere, severeCasesByRequestedTime, severeSevereCasesByRequestedTime, hospitalBedsLeft, severeHospitalBedsLeft, icuCases, severeIcuCases, ventilatorCases, severeVentilatorCases, dollarsInFlight, severeDollarsInFlight
 
-    numberOfDays = daysConverter(numberOfDays, durationType)
-    currentlyInfected, severeCurrentlyInfected, requestedTime, requestedTimeSevere, severeCasesByRequestedTime, severeSevereCasesByRequestedTime, hospitalBedsLeft, severeHospitalBedsLeft, icuCases, severeIcuCases, ventilatorCases, severeVentilatorCases, dollarsInFlight, severeDollarsInFlight = impactAssess(reportedCases, numberOfDays, hospitalBeds)
+  numberOfDays = daysConverter(numberOfDays, durationType)
+  currentlyInfected, severeCurrentlyInfected, requestedTime, requestedTimeSevere, severeCasesByRequestedTime, severeSevereCasesByRequestedTime, hospitalBedsLeft, severeHospitalBedsLeft, icuCases, severeIcuCases, ventilatorCases, severeVentilatorCases, dollarsInFlight, severeDollarsInFlight = impactAssess(reportedCases, numberOfDays, hospitalBeds)
 
     data = {}
     dataAndela = data
