@@ -8,7 +8,7 @@ def estimator(data):
     percentage = data["region"]["avgDailyIncomePopulation"]
     
 def daysConverter(number, durationType):
-  data = data 
+  data == data
   if data["periodType"] == 'days':
     days = data["timeToElapse"]
   elif data["periodType"] == 'weeks':
