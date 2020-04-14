@@ -10,7 +10,7 @@ def estimator(data):
 def daysConverter(number, durationType):
   if ["periodType"] == 'days':
     days = ["timeToElapse"]
-  elif data["periodType"] == 'weeks':
+  elif ["periodType"] == 'weeks':
     days = ((["timeToElapse"]) * 7)
   else:
     days = ((["timeToElapse"]) * 30)
