@@ -1,4 +1,5 @@
 def estimator(data):
+    data = data 
     numberOfDays = data["timeToElapse"]
     durationType = data["periodType"]
     reportedCases = data["reportedCases"]
